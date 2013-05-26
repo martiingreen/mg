@@ -4,15 +4,56 @@
     <meta charset="utf-8">
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
-        div {
-            border: 2px dashed blue;
-            padding-bottom: 40px;
+        .item-box {
+            width: 100%;
+            display: inline-block;
         }
+
+            .item-box img {
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
 
         .sidebar-nav {
             padding: 9px 0;
+        }
+
+        @media (min-width: 1200px) {
+            .item-container {
+                -webkit-column-count: 3;
+                -webkit-column-gap: 0px;
+                -moz-column-count: 3;
+                -moz-column-gap: 0px;
+                column-count: 3;
+                column-gap: 0px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .item-container {
+                -webkit-column-count: 2;
+                -webkit-column-gap: 0px;
+                -moz-column-count: 2;
+                -moz-column-gap: 0px;
+                column-count: 2;
+                column-gap: 0px;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            .item-container {
+                -webkit-column-count: 1;
+                -webkit-column-gap: 0px;
+                -moz-column-count: 1;
+                -moz-column-gap: 0px;
+                column-count: 1;
+                column-gap: 0px;
+            }
         }
 
         @media (max-width: 980px) {
@@ -24,49 +65,56 @@
             }
         }
     </style>
-    <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid">
         <div class="row-fluid">
-            <div class="span3 menu">
-                <section id="main_content">
-                    <img src="images/logo.jpg" width="400px" height="400px" />
-                    <p>
-
-                        <a href="mailto:info@martiingreen.com">Contact us</a>
-                    </p>
-                </section>
-
-                <footer>
-                    Copyright 2013 MartiinGreen Pty Ltd
-                </footer>
-            </div>
-            <div class="span3">
-                <!--Sidebar content-->
-                <img src="http://placekitten.com/400/600" style="width: 100%;" /><br>
-                <img src="http://placekitten.com/g/400/400" style="width: 100%;" />
-            </div>
-            <div class="span3">
-                <img src="http://placekitten.com/400/300" style="width: 100%;" /><br>
-                <img src="http://placekitten.com/g/400/700" style="width: 100%;" />
-            </div>
-            <div class="span3">
-                <img src="http://placekitten.com/400/450" style="width: 100%;" /><br>
-                <img src="http://placekitten.com/g/400/550" style="width: 100%;" />
+            <div class="span12">
+                <div class="row-fluid">
+                    <div class="span3 menu">
+                        <section id="main_content">
+                            <img src="images/logo.jpg" width="400px" height="400px" />
+                            <p><a href="mailto:info@martiingreen.com">Contact us</a></p>
+                        </section>
+                        <footer>
+                            Copyright 2013 MartiinGreen Pty Ltd
+                        </footer>
+                    </div>
+                    <div class="span9">
+                        <div class="item-container">
+                            <div class="item-box">
+                                <!--Sidebar content-->
+                                <img src="http://placekitten.com/400/600" />
+                            </div>
+                            <div class="item-box">
+                                <img src="http://placekitten.com/g/400/400" />
+                            </div>
+                            <div class="item-box">
+                                <img src="http://placekitten.com/400/300" />
+                            </div>
+                            <div class="item-box">
+                                <img src="http://placekitten.com/g/400/700" />
+                            </div>
+                            <div class="item-box">
+                                <img src="http://placekitten.com/400/450" />
+                            </div>
+                            <div class="item-box">
+                                <img src="http://placekitten.com/g/400/550" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        try {
-            var pageTracker = _gat._getTracker("UA-38082038-1");
-            pageTracker._trackPageview();
-        } catch (err) { }
-    </script>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-38082038-1");
+                pageTracker._trackPageview();
+            } catch (err) { }
+        </script>
 </body>
 </html>
