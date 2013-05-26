@@ -18,11 +18,15 @@
                 padding: 0px;
             }
 
+        .social-buttons img {
+            max-width: 50px;
+        }
+
         .sidebar-nav {
             padding: 9px 0;
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: 1388px) {
             .item-container {
                 -webkit-column-count: 3;
                 -webkit-column-gap: 0px;
@@ -33,7 +37,7 @@
             }
         }
 
-        @media (min-width: 768px) and (max-width: 1199px) {
+        @media (min-width: 768px) and (max-width: 1387px) {
             .item-container {
                 -webkit-column-count: 2;
                 -webkit-column-gap: 0px;
@@ -67,54 +71,68 @@
     </style>
 </head>
 <body>
-        <div class="row-fluid">
-            <div class="span12">
-                <div class="row-fluid">
-                    <div class="span3 menu">
-                        <section id="main_content">
-                            <img src="images/logo.jpg" width="400px" height="400px" />
-                            <p><a href="mailto:info@martiingreen.com">Contact us</a></p>
-                        </section>
-                        <footer>
-                            Copyright 2013 MartiinGreen Pty Ltd
-                        </footer>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="row-fluid">
+                <div class="span3 menu">
+                    <section id="main_content" class="text-center">
+                        <img src="images/logo.jpg" width="400px" height="400px" />
+                        <p class="lead text-center"><a href="mailto:info@martiingreen.com">Contact us</a></p>
+                    </section>
+                    <div class="row-fluid social-buttons text-center">
+                        <a href="https://twitter.com/MartiinGreen">
+                            <img src="images/twitter.png" /></a>
+                        <a href="https://www.facebook.com/martiingreenAU">
+                            <img src="images/facebook.png" /></a>
+                        <a href="http://instagram.com/martiingreen">
+                            <img src="images/instagram.png" /></a>
+                        <a href="https://plus.google.com/103810994508688481296">
+                            <img src="images/googleplus.png" /></a>
+                        <a href="http://pinterest.com/martiingreen/">
+                            <img src="images/pinterest.png" /></a>
+                        <a href="http://www.linkedin.com/company/martiingreen">
+                            <img src="images/linkedin.png" /></a>
                     </div>
-                    <div class="span9">
-                        <div class="item-container">
-                            <div class="item-box">
-                                <!--Sidebar content-->
-                                <img src="images/img1.jpg" />
-                            </div>
-                            <div class="item-box">
-                                <img src="images/img2.jpg" />
-                            </div>
-                            <div class="item-box">
-                                <img src="images/img3.jpg" />
-                            </div>
-                            <div class="item-box">
-                                <img src="images/img4.jpg" />
-                            </div>
-                            <div class="item-box">
-                                <img src="images/img5.jpg" />
-                            </div>
-                            <div class="item-box">
-                                <img src="images/img6.jpg" />
-                            </div>
+                    <footer class="text-center">
+                        <small>Copyright 2013 MartiinGreen Pty Ltd</small>
+                    </footer>
+                </div>
+                <div class="span9">
+                    <div class="item-container">
+                        <div class="item-box">
+                            <!--Sidebar content-->
+                            <img src="images/img1.jpg" />
+                        </div>
+                        <div class="item-box">
+                            <img src="images/img2.jpg" />
+                        </div>
+                        <div class="item-box">
+                            <img src="images/img3.jpg" />
+                        </div>
+                        <div class="item-box">
+                            <img src="images/img4.jpg" />
+                        </div>
+                        <div class="item-box">
+                            <img src="images/img5.jpg" />
+                        </div>
+                        <div class="item-box">
+                            <img src="images/img6.jpg" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-            try {
-                var pageTracker = _gat._getTracker("UA-38082038-1");
-                pageTracker._trackPageview();
-            } catch (err) { }
-        </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-38082038-1");
+            pageTracker._trackPageview();
+        } catch (err) { }
+    </script>
 </body>
 </html>
