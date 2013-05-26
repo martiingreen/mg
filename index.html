@@ -26,13 +26,70 @@
                 padding: 0px;
             }
 
-        .social-buttons img {
-            max-width: 50px;
-        }
-
         .sidebar-nav {
             padding: 9px 0;
         }
+		
+		.item {
+			display:inline-block;
+		}
+		
+		.social-buttons {
+			margin-bottom:1em;
+		}
+		
+		.social-buttons a {
+			display:block;
+			width:50px;
+			height:50px;
+		}
+		
+		.menu {
+			height: 100%;
+		}
+		
+		.social-twitter {
+			background:transparent url("images/twitter.png") center top no-repeat;
+			background-size: 50px; 50px;
+		}
+		.social-twitter:hover {
+			background-image: url('images/twitter-h.png');
+		}
+		.social-facebook {
+			background:transparent url("images/facebook.png") center top no-repeat;
+			background-size: 50px; 50px;
+		}
+		.social-facebook:hover {
+			background-image: url('images/facebook-h.png');
+		}
+		.social-instagram {
+			background:transparent url("images/instagram.png") center top no-repeat;
+			background-size: 50px; 50px;
+		}
+		.social-instagram:hover {
+			background-image: url('images/instagram-h.png');
+		}
+		.social-googleplus {
+			background:transparent url("images/googleplus.png") center top no-repeat;
+			background-size: 50px; 50px;
+		}
+		.social-googleplus:hover {
+			background-image: url("images/googleplus-h.png");
+		}
+		.social-pinterest {
+			background:transparent url("images/pinterest.png") center top no-repeat;
+			background-size: 50px; 50px;
+		}
+		.social-pinterest:hover {
+			background-image: url('images/pinterest-h.png');
+		}
+		.social-linkedin {
+			background:transparent url("images/linkedin.png") center top no-repeat;
+			background-size: 50px; 50px;
+		}
+		.social-linkedin:hover {
+			background-image: url('images/linkedin-h.png');
+		}
 
         @media (min-width: 1388px) {
             .item-container {
@@ -88,24 +145,34 @@
                         <p class="lead text-center"><a href="mailto:info@martiingreen.com">Contact us</a></p>
                     </section>
                     <div class="row-fluid social-buttons text-center">
-                        <a href="https://twitter.com/MartiinGreen">
-                            <img src="images/twitter.png" /></a>
-                        <a href="https://www.facebook.com/martiingreenAU">
-                            <img src="images/facebook.png" /></a>
-                        <a href="http://instagram.com/martiingreen">
-                            <img src="images/instagram.png" /></a>
-                        <a href="https://plus.google.com/103810994508688481296">
-                            <img src="images/googleplus.png" /></a>
-                        <a href="http://pinterest.com/martiingreen/">
-                            <img src="images/pinterest.png" /></a>
-                        <a href="http://www.linkedin.com/company/martiingreen">
-                            <img src="images/linkedin.png" /></a>
-                    </div>
+					<div class="item">
+						<div class="item">
+							<a href="https://twitter.com/MartiinGreen" class="social-twitter"></a>
+						</div>
+						<div class="item">
+							<a href="https://www.facebook.com/martiingreenAU" class="social-facebook"></a>
+						</div>
+						<div class="item">		
+							<a href="http://instagram.com/martiingreen" class="social-instagram"></a>
+						</div>
+						</div>
+					<div class="item">
+						<div class="item">									
+							<a href="https://plus.google.com/103810994508688481296" class="social-googleplus"></a>
+						</div>
+						<div class="item">		
+							<a href="http://pinterest.com/martiingreen/" class="social-pinterest"></a>
+						</div>
+						<div class="item">		
+							<a href="http://www.linkedin.com/company/martiingreen" class="social-linkedin"></a>
+						</div>
+						</div>
+					</div>
                     <footer class="text-center">
                         <small>Copyright 2013 MartiinGreen Pty Ltd</small>
                     </footer>
                 </div>
-                <div class="span9">
+				<div class="span9">
                     <div class="item-container">
                         <div class="item-box">
                             <!--Sidebar content-->
