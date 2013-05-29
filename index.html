@@ -26,46 +26,17 @@
             font-style: normal;
         }
 
-        /* Use the following CSS code if you want to have a class per icon */
-        /*
-        Instead of a list of all class selectors,
-        you can use the generic selector below, but it's slower:
-        [class*="icon2-"] {
-        */
-        .icon2-facebook, .icon2-instagram, .icon2-linkedin, .icon2-twitter, .icon2-googleplus, .icon2-pinterest {
-            font-family: 'mg-social';
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-        }
-
-            .icon2-facebook:before {
-                content: "\66";
-            }
-
-            .icon2-instagram:before {
-                content: "\69";
-            }
-
-            .icon2-linkedin:before {
-                content: "\6c";
-            }
-
-            .icon2-twitter:before {
-                content: "\74";
-            }
-
-            .icon2-googleplus:before {
-                content: "\67";
-            }
-
-            .icon2-pinterest:before {
-                content: "\70";
-            }
+		/* Use the following CSS code if you want to use data attributes for inserting your icons */
+		[data-icon]:before {
+			font-family: 'mg-social';
+			content: attr(data-icon);
+			speak: none;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+		}
 
 		.contact {
 			color: #488087 !important;
@@ -166,24 +137,24 @@
                     <div class="row-fluid social-buttons text-center">
                         <div class="item">
                             <div class="item">
-                                <a href="https://twitter.com/MartiinGreen"><span aria-hidden="true" class="icon2-twitter"></span></a>
+                                <a href="https://twitter.com/MartiinGreen"><span aria-hidden="true" data-icon="t" /></a>
                             </div>
                             <div class="item">
-                                <a href="https://www.facebook.com/martiingreenAU"><span aria-hidden="true" class="icon2-facebook"></a>
+                                <a href="https://www.facebook.com/martiingreenAU"><span aria-hidden="true" data-icon="f"></a>
                             </div>
                             <div class="item">
-                                <a href="http://instagram.com/martiingreen"><span aria-hidden="true" class="icon2-instagram"></a>
+                                <a href="http://instagram.com/martiingreen"><span aria-hidden="true" data-icon="i"></a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="item">
-                                <a href="https://plus.google.com/103810994508688481296"><span aria-hidden="true" class="icon2-googleplus"></a>
+                                <a href="https://plus.google.com/103810994508688481296"><span aria-hidden="true"  data-icon="g"></a>
                             </div>
                             <div class="item">
-                                <a href="http://pinterest.com/martiingreen/"><span aria-hidden="true" class="icon2-pinterest"></a>
+                                <a href="http://pinterest.com/martiingreen/"><span aria-hidden="true"  data-icon="p"></a>
                             </div>
                             <div class="item">
-                                <a href="http://www.linkedin.com/company/martiingreen"><span aria-hidden="true" class="icon2-linkedin"></a>
+                                <a href="http://www.linkedin.com/company/martiingreen"><span aria-hidden="true"  data-icon="l"></a>
                             </div>
                         </div>
                     </div>
