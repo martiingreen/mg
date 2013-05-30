@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="”publisher”" href="”https://plus.google.com/u/0/b/103810994508688481296/103810994508688481296“" />
+    <link rel="publisher" href="https://plus.google.com/u/0/b/103810994508688481296/103810994508688481296" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" />
-	<!--[if lte IE 7]>
+    <!--[if lte IE 7]>
 	<script src="lte-ie7.js"></script>
 	<![endif]-->
     <!--[if lt IE 9]>
@@ -26,21 +26,21 @@
             font-style: normal;
         }
 
-		/* Use the following CSS code if you want to use data attributes for inserting your icons */
-		[data-icon]:before {
-			font-family: 'mg-social';
-			content: attr(data-icon);
-			speak: none;
-			font-weight: normal;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-		}
+        /* Use the following CSS code if you want to use data attributes for inserting your icons */
+        [data-icon]:before {
+            font-family: 'mg-social';
+            content: attr(data-icon);
+            speak: none;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
 
-		.contact {
-			color: #488087 !important;
-		}
+        .contact {
+            color: #488087 !important;
+        }
 
         .item-box {
             width: 100%;
@@ -60,6 +60,10 @@
         .item {
             display: inline-block;
         }
+		
+		.subscribe-form {
+			padding: 9px 15px;
+		}
 
         .social-buttons {
             margin-bottom: 3em;
@@ -67,14 +71,14 @@
         }
 
             .social-buttons a {
-				font-size: 50px;
-				color: #404041;
-				text-decoration: none;
+                font-size: 50px;
+                color: #404041;
+                text-decoration: none;
             }
 
-            .social-buttons a:hover {
-				color:#488087;
-            }
+                .social-buttons a:hover {
+                    color: #488087;
+                }
 
         .menu {
             height: 100%;
@@ -133,6 +137,31 @@
                         <img src="images/logo.jpg" width="400px" height="400px" />
                         <p class="text-center contact"><a href="mailto:info@martiingreen.com">CONTACT US</a></p>
                     </section>
+                    <section class="text-center">
+                         <div id="accordion2">
+                            <div>
+                                <div>
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">SUBSCRIBE TO NEWSLETTER
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse">
+                                    <div  class="subscribe-form">
+                                        <form action="http://martiingreen.us4.list-manage.com/subscribe/post?u=a98c2c29767bb1cb3296145e0&amp;id=8b96c04108" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                            <div class="mc-field-group">
+                                                <input type="email" value="" name="EMAIL" placeholder="email address" class="required email" id="mce-EMAIL">
+                                            </div>
+                                            <div id="mce-responses" class="clear">
+                                                <div class="response" id="mce-error-response" style="display: none"></div>
+                                                <div class="response" id="mce-success-response" style="display: none"></div>
+                                            </div>
+                                            <div class="clear">
+                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                     <div class="row-fluid social-buttons text-center">
                         <div class="item">
@@ -148,13 +177,13 @@
                         </div>
                         <div class="item">
                             <div class="item">
-                                <a href="https://plus.google.com/103810994508688481296"><span aria-hidden="true"  data-icon="g"></a>
+                                <a href="https://plus.google.com/103810994508688481296"><span aria-hidden="true" data-icon="g"></a>
                             </div>
                             <div class="item">
-                                <a href="http://pinterest.com/martiingreen/"><span aria-hidden="true"  data-icon="p"></a>
+                                <a href="http://pinterest.com/martiingreen/"><span aria-hidden="true" data-icon="p"></a>
                             </div>
                             <div class="item">
-                                <a href="http://www.linkedin.com/company/martiingreen"><span aria-hidden="true"  data-icon="l"></a>
+                                <a href="http://www.linkedin.com/company/martiingreen"><span aria-hidden="true" data-icon="l"></a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +217,8 @@
             </div>
         </div>
     </div>
-
+    <script src="javascripts/jquery-2.0.1.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
